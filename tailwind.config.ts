@@ -7,12 +7,24 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      'illini-blue': '#13294b',
+      'illini-orange': '#ff5f0f',
+      'illini-accent-subhead': '#0455a4',
+      'illini-accent-knockout': '#1f4096',
+      'illini-light-grey': '#e8e9ea',
+      'illini-grey': '#a5a8aa',
+      'illini-dark-grey': '#5e6669',
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        mono: ['var(--font-source-code-pro)'],
+      }
     },
   },
   plugins: [],
